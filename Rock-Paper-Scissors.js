@@ -61,20 +61,27 @@ for (let i = 1; i <= 5;i++) {
 
     if (result === "draw") {
         console.log("It's draw this round!");
+        alert("It's draw this round!");
     }
     else if (result === "win") {
         humanScore++;
         console.log("You win this round :)");
+        alert("You win this round :)");
     }
     else {
         computerScore++;
         console.log("You lose this round :'(");
+        alert("You lose this round :'(");
     }
 }
 
 console.log("GAME OVER!");
 console.log("You score : " + humanScore + " rounds");
 console.log("Computer score : " + computerScore + " rounds");
+
+alert(`GAME OVER!\n
+    You score : ${humanScore} round(s)\n
+    Computer score : ${computerScore} round(s)`);
 
 if (humanScore === computerScore) {
     console.log("It's draw");
